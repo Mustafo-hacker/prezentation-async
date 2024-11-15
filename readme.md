@@ -32,7 +32,7 @@ let promise = new Promise((resolve, reject) => {
 });
 
 promise.then((message) => {
-    console.log(message);  // Will log: Operation was successful!
+    console.log(message); 
 }).catch((message) => {
-    console.log(message);  // Will log: An error occurred.
+    console.log(message);
 });
