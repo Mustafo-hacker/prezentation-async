@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-Do List</title>
 </head>
 <body>
-    <script src="./script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        table {
+            width: 100%;
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+    </style>
+        <table>
+            <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Phone</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="root"></tbody>
+        </table>
+    <script src="script.js"></script>
 </body>
 </html>
