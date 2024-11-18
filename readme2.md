@@ -39,5 +39,3 @@ Using HTTPS instead of HTTP is an important step in ensuring data security and i
 
 !HTTP vs HTTPS
 
-![](./i%20(8).webp)
-

@@ -1,41 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
 </head>
+
 <body>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            margin-top: 30px;
         }
-        
+
         table {
-            width: 100%;
-            border: 1px solid gray;
+            width: 90%;
             border-collapse: collapse;
+            margin: auto;
+            border: 1px solid #ccc;
         }
-        th, td {
-            padding: 8px;
+
+        th {
+            padding: 3px;
             text-align: left;
             border: 1px solid #ddd;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        td {
+            text-align: left;
+            border: 1px solid #ddd;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 9px;
+        }
+
+        th {
+            background-color: rgba(128, 128, 128, 0.364);
+            padding: 15px;
+            border-bottom: 1px solid black;
         }
     </style>
-        <table>
-            <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>Name</th>
-                  <th>Phone</th>
-                  <th>Status</th>
-                  <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody class="root"></tbody>
-        </table>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody class="root"></tbody>
+    </table>
+    <dialog class="dialogEdit">
+        <input class="inpEditTitle" type="text">
+        <input class="inpEditDesc" type="text">
+        <select class="selectStatus">
+            <option value="true">Active</option>
+            <option value="false">Inactive</option>
+        </select>
+        <button class="dialogBtnSaveEdit">Save</button>
+    </dialog>
     <script src="script.js"></script>
 </body>
+
 </html>
